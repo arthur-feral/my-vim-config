@@ -6,7 +6,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rstacruz/sparkup'
-Plugin 'Pluginvim-scripts/tComment'
+Plugin 'vim-scripts/tComment'
 Plugin 'MarcWeber/vim-addon-manager'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'easymotion/vim-easymotion'
