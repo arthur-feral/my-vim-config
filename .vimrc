@@ -2,15 +2,8 @@ set nocompatible
 set t_Co=256
 colorscheme mustang
 
-if &t_Co >= 256 || has("gui_running")
-    colorscheme mustang
-endif
-
-if &t_Co > 2 || has("gui_running")
-	" switch syntax highlighting on, when the terminal has colors
-	 syntax on
-endif
-
+syntax on
+colorscheme mustang
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
 execute pathogen#helptags()
