@@ -32,7 +32,7 @@ fi
 `ln -s $scriptwd $vimFolder`
 `ln -s "$scriptwd/.vimrc" "$HOME/.vimrc"`
 
-`vim --cmd "so $HOME/.vimrc"`
+#`vim --cmd "so $HOME/.vimrc"`
 
 #`cp -R $scriptwd $vimFolder`
 #`mv "$vimFolder/.vimrc" "$HOME/.vimrc"`
