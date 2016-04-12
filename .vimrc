@@ -1,4 +1,24 @@
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rstacruz/sparkup'
+Plugin 'Pluginvim-scripts/tComment'
+Plugin 'PluginMarcWeber/vim-addon'-manager'
+Plugin 'PluginMarcWeber/vim-addon'-mw-utils'
+Plugin 'Plugineasymotion/vim-easymotion'
+Plugin 'Plugintpope/vim-fugitive'
+Plugin 'Pluginsheerun/vim-polyglot'
+Plugin 'Plugingarbas/vim-snipmate'
+Plugin 'Pluginhonza/vim-snippets'
+Plugin 'Plugintpope/vim-surround'
+
+call vundle#end()
+filetype plugin indent on
+
 set t_Co=256
 colorscheme mustang
 
