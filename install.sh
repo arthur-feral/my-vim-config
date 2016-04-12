@@ -8,8 +8,9 @@ if [ -z "$scriptwd" ] ; then
   exit 1  # fail
 fi
 
-if [ -d $vimFolder ]; then
-  if [[ -L $vimFolder]]
+if [ -d $vimFolder ]
+then
+  if [ -L $vimFolder]
   then
     `rm -R $vimFolder`
   else
@@ -18,8 +19,9 @@ if [ -d $vimFolder ]; then
 fi
 
 
-if [ -f "$HOME/.vimrc" ]; then
-  if [[ -L "$HOME/.vimrc"]]
+if [ -f "$HOME/.vimrc" ]
+then
+  if [ -L "$HOME/.vimrc"]
   then
     `rm "$HOME/.vimrc"`
   else
@@ -30,6 +32,7 @@ fi
 `ln -s $scriptwd $vimFolder`
 `ln -s "$scriptwd/.vimrc" "$HOME/.vimrc"`
 
+`vim --cmd "so $HOME/.vimrc"`
 
 #`cp -R $scriptwd $vimFolder`
 #`mv "$vimFolder/.vimrc" "$HOME/.vimrc"`
