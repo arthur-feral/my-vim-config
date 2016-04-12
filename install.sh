@@ -32,4 +32,4 @@ fi
 `ln -s $scriptwd $vimFolder`
 `ln -s "$scriptwd/.vimrc" "$HOME/.vimrc"`
 
-`git clone git@github.com:VundleVim/Vundle.vim.git "$scriptwd/bundle/Vundle.vim"`
+`git clone https://github.com/VundleVim/Vundle.vim.git "$scriptwd/bundle/Vundle.vim"`
