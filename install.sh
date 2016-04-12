@@ -10,7 +10,7 @@ fi
 
 if [ -d $vimFolder ]
 then
-  if [ -L $vimFolder]
+  if [[ -L $vimFolder ]];
   then
     `rm -R $vimFolder`
   else
@@ -21,7 +21,7 @@ fi
 
 if [ -f "$HOME/.vimrc" ]
 then
-  if [ -L "$HOME/.vimrc"]
+  if [[ -L "$HOME/.vimrc" ]];
   then
     `rm "$HOME/.vimrc"`
   else
