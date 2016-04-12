@@ -4,7 +4,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tomtom/tlib_vim'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rstacruz/sparkup'
 Plugin 'vim-scripts/tComment'
@@ -12,6 +14,7 @@ Plugin 'MarcWeber/vim-addon-manager'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
@@ -73,4 +76,9 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:.
 "ActivateAddons vim-snippets snipmate
 map <leader>c <c-_><c-_>
 map <leader>t :NERDTreeToggle<CR>
+
+"once u add another plugin on vimrc file with vim,
+"it just update vim with new plugins
+map <leader>u :so ~/.vimrc<CR> :VundleInstall<CR>
+
 
