@@ -1,6 +1,7 @@
 set nocompatible
-filetype off
+" filetype off
 
+syntax on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -22,14 +23,19 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
 
+"color schemes
+Plugin 'sjl/badwolf'
+
 call vundle#end()
 filetype plugin indent on
 
 set t_Co=256
-colorscheme mustang
+set term=xterm-256color
 
-syntax on
+" syntax enable
 colorscheme mustang
+" colorscheme badwolf
+
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
 execute pathogen#helptags()
