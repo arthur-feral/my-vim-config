@@ -6,6 +6,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tomtom/tlib_vim'
+Plugin 'mhinz/vim-signify'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rstacruz/sparkup'
@@ -81,5 +83,4 @@ map <leader>t :NERDTreeToggle<CR>
 "once u add another plugin on vimrc file with vim,
 "it just update vim with new plugins
 map <leader>u :so ~/.vimrc<CR> :VundleInstall<CR>
-
 
