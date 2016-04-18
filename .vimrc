@@ -66,6 +66,7 @@ set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 
 set cursorline
+set clipboard=unnamed
 
 "hi CursorLine   cterm=NONE ctermbg=Grey40 ctermfg=NONE
 hi CursorLine term=NONE cterm=NONE guibg=Grey40
