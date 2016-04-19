@@ -30,7 +30,7 @@ call vundle#end()
 filetype plugin indent on
 
 set t_Co=256
-set term=xterm-256color
+" set term=xterm-256color
 
 " syntax enable
 colorscheme mustang
