@@ -77,6 +77,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
+set nohlsearch
 
 filetype plugin indent on
 
